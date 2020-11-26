@@ -89,6 +89,10 @@
     border-radius: 2rem;
 }
 
+#container .wrapper label .checkbox-style {
+    cursor: pointer;
+}
+
 #container .wrapper label input::placeholder {
     color: var(--background-wrapper);
 }
@@ -105,22 +109,11 @@
     height: 2rem;
 }
 
-#container .wrapper label .checkbox-input {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#container .wrapper label .checkbox-input .checkbox-style {
-    border: 2px solid rgb(211, 112, 112);
-    background-color: transparent;
-}
-
 #container .wrapper .submit-button {
     width: 50rem;
     height: 5rem;
 
-    margin: 2rem 4rem;
+    margin: 2rem auto;
 
     border: none;
     background-color: var(--title);
@@ -136,7 +129,7 @@
     transition: background 0.3s;
 }
 
-#container .wrapper button:hover {
+#container .wrapper .submit-button:hover {
     background-color: var(--focus-title);
 }
 
