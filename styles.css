@@ -1,0 +1,144 @@
+:root {
+
+    --background: #1d1d23;
+    --background-wrapper: #f6a801;
+    --title: #1c415c;
+    --focus-title: #245375;
+    --options: #ffe065;
+    --boxes: #fcec86;
+    --focus-boxes: #edd228;
+
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: var(--background);
+
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container .wrapper {
+    background-color: var(--background-wrapper);
+    border-radius: 5%;
+
+    width: 60rem;
+    height: 55rem;
+
+    max-width: 600px;
+    max-height: 700px;
+
+}
+
+#container .wrapper header {
+    font-family: Righteous, sans-serif;
+    font-size: 2.2rem;
+    color: var(--title);
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+#container .wrapper section {
+    width: 100%;
+    height: 86%;
+}
+
+#container .wrapper form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container .wrapper label {
+    font-family: Orienta, sans-serif;
+    font-size: 2rem;
+    color: var(--options);
+
+    padding-top: 0.8rem;
+    padding-left: 3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#container .wrapper label input {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    text-align: center;
+
+    background-color: var(--boxes);
+    color: var(--title);
+    border: none;
+    border-radius: 2rem;
+}
+
+#container .wrapper label input::placeholder {
+    color: var(--background-wrapper);
+}
+
+#container .wrapper label input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem var(--focus-boxes);
+}
+
+#container .wrapper label .checkbox-input {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#container .wrapper label .checkbox-input .checkbox-style {
+    border: 2px solid rgb(211, 112, 112);
+    background-color: transparent;
+}
+
+#container .wrapper button {
+    width: 50rem;
+    height: 5rem;
+
+    margin: 2rem 4rem;
+
+    border: none;
+    background-color: var(--title);
+    color: var(--background-wrapper);
+    border-radius: 6rem;
+
+    font-family: Orienta, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+#container .wrapper button:hover {
+    background-color: var(--focus-title);
+}
+
+#container .wrapper #results{
+    font-family: Orienta, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--title);
+
+    padding-left: 3rem;
+}
+
+
+
+

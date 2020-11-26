@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="shortcut icon" href="./images/grill.svg">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orienta&display=swap" rel="stylesheet">
+
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <div id="container">
+        <div class="wrapper">
+
+            <header>
+                <h1>Churrascômetro</h1>
+            </header>
+    
+            <section>
+                <form action="" onsubmit="handleSubmit(event)">
+    
+                    <!-- grown ups -->
+                    <p><label for="adults">
+                        Adultos:<input id="adults" type="number" placeholder="Número de adultos">
+                    </label></p>
+                    <p><label for="vegetarian-adults" class="checkbox-input">
+                        <input id="vegetarian-adults" type="checkbox" onchange="changeVegetarianAdults()">Algum desses adultos é vegetariano?
+                        <span class="checkbox-style"></span>
+                    </label></p>
+
+                    <div id="vegetarian-adults-div"></div>
+
+
+                    <p><label for="non-drinking-adults" class="checkbox-input">
+                        <input onchange="changeNonDrinking()" id="non-drinking-adults" type="checkbox">Algum desses adultos não bebe?
+                        <span class="checkbox-style"></span>
+                    </label></p>
+                    
+                    <div id="non-drinking-div"></div>
+
+
+                    <!-- kids -->
+                    <p><label for="kids">
+                        Crianças:<input id="kids" type="number" placeholder="Número de crianças">
+                    </label></p>
+                    <p><label for="vegetarian-kids" class="checkbox-input">
+                        <input onchange="changeVegetarianKids()" id="vegetarian-kids" type="checkbox">Alguma dessas crianças é vegetariana?
+                        <span class="checkbox-style"></span>
+                    </label></p>
+                    
+                    <div id="vegetarian-kids-div"></div>
+                    
+                    <!-- schedule -->
+                    <p><label for="duration">
+                        Duração:<input required id="duration" type="number" placeholder="Duração do evento (horas)">
+                    </label></p>
+    
+                    <button class="button-submit" type="submit">CALCULAR CHURRASCO</button>
+
+                    <div id="results"></div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
