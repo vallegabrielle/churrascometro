@@ -49,7 +49,7 @@ function changeVegetarianAdults() {
         inputVegAdults = document.getElementById("vegetarian-adults-div")
         inputVegAdults.innerHTML =
         `<p><label for="number-vegetarian-adults">
-            Quantos?<input id="number-vegetarian-adults" type="number" placeholder="Adultos vegetarianos">
+            Quantos?<input class="number-input" id="number-vegetarian-adults" type="number" placeholder="Adultos vegetarianos">
         </label></p>`
     } else {
         inputVegAdults = document.getElementById("vegetarian-adults-div")
@@ -64,7 +64,7 @@ function changeNonDrinking() {
         inputNonDrinking = document.getElementById("non-drinking-div")
         inputNonDrinking.innerHTML =
         `<p><label for="number-non-drinking">
-            Quantos?<input id="number-non-drinking" type="number" placeholder="Adultos que não bebem">
+            Quantos?<input class="number-input" id="number-non-drinking" type="number" placeholder="Adultos que não bebem">
         </label></p>`
     } else {
         inputNonDrinking = document.getElementById("non-drinking-div")
@@ -79,11 +79,10 @@ function changeVegetarianKids() {
         inputVegKids = document.getElementById("vegetarian-kids-div")
         inputVegKids.innerHTML =
         `<p><label for="number-vegetarian-kids">
-            Quantos?<input id="number-vegetarian-kids" type="number" placeholder="Crianças vegetarianas">
+            Quantos?<input class="number-input" id="number-vegetarian-kids" type="number" placeholder="Crianças vegetarianas">
         </label></p>`
     } else {
         inputVegKids = document.getElementById("vegetarian-kids-div")
         inputVegKids.innerHTML = `<div id="vegetarian-kids-div"></div>`
     }
 }
-

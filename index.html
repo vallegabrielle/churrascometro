@@ -29,10 +29,10 @@
                 <form action="" onsubmit="handleSubmit(event)">
     
                     <!-- grown ups -->
-                    <p><label for="adults">
-                        Adultos:<input id="adults" type="number" placeholder="Número de adultos">
+                    <p><label>
+                        Adultos:<input class="number-input" id="adults" type="number" placeholder="Número de adultos">
                     </label></p>
-                    <p><label for="vegetarian-adults" class="checkbox-input">
+                    <p><label class="checkbox-input">
                         <input id="vegetarian-adults" type="checkbox" onchange="changeVegetarianAdults()">Algum desses adultos é vegetariano?
                         <span class="checkbox-style"></span>
                     </label></p>
@@ -40,7 +40,7 @@
                     <div id="vegetarian-adults-div"></div>
 
 
-                    <p><label for="non-drinking-adults" class="checkbox-input">
+                    <p><label class="checkbox-input">
                         <input onchange="changeNonDrinking()" id="non-drinking-adults" type="checkbox">Algum desses adultos não bebe?
                         <span class="checkbox-style"></span>
                     </label></p>
@@ -49,10 +49,10 @@
 
 
                     <!-- kids -->
-                    <p><label for="kids">
-                        Crianças:<input id="kids" type="number" placeholder="Número de crianças">
+                    <p><label>
+                        Crianças:<input class="number-input" id="kids" type="number" placeholder="Número de crianças">
                     </label></p>
-                    <p><label for="vegetarian-kids" class="checkbox-input">
+                    <p><label class="checkbox-input">
                         <input onchange="changeVegetarianKids()" id="vegetarian-kids" type="checkbox">Alguma dessas crianças é vegetariana?
                         <span class="checkbox-style"></span>
                     </label></p>
@@ -60,11 +60,11 @@
                     <div id="vegetarian-kids-div"></div>
                     
                     <!-- schedule -->
-                    <p><label for="duration">
-                        Duração:<input required id="duration" type="number" placeholder="Duração do evento (horas)">
+                    <p><label>
+                        Duração:<input required class="number-input" id="duration" type="number" placeholder="Duração do evento (horas)">
                     </label></p>
     
-                    <button class="button-submit" type="submit">CALCULAR CHURRASCO</button>
+                    <button class="submit-button" type="submit">CALCULAR CHURRASCO</button>
 
                     <div id="results"></div>
                 </form>
