@@ -24,5 +24,4 @@ This project is perfect for a beginner dev who wants to test how simple habilits
 
 ## Getting started
 
-### You can use or modify this project yoursel following typing this code in your terminal:
-   #### git clone https://github.com/vallegabrielle/churrascometro.git
+### You can use or modify this project yoursel following typing this code in your terminal: $ git clone https://github.com/vallegabrielle/churrascometro.git
